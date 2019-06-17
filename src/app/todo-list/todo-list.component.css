@@ -1,0 +1,14 @@
+ul li{
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+ul li span{
+    color: #333;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.btn-group{
+    float: right;
+}

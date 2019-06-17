@@ -1,0 +1,13 @@
+.todoForm textarea{
+    width: 96%;
+    padding: 0 2%;
+    line-height: 32px;
+    border:1px solid #ddd;
+    background-color: #fff;
+}
+.input-group{
+    margin: 10px 0;
+}
+.btn-group{
+    text-align: right
+}

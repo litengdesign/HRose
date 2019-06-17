@@ -1,0 +1,18 @@
+
+  <div class="wrapper">
+    <h1 class="text-center">我的待办事件</h1>
+    <div class="btn-wrapper text-center">
+      <a [routerLink]="'/addTodo'" routerLinkActive="active">新增笔记</a>
+      <a [routerLink]="'/listTodo'" routerLinkActive="active">笔记列表</a>
+    </div>
+    <div class="alert-msg text-center">{{server.msg}}</div>
+    <div class="todoForm">
+      <div class="input-group">
+        <textarea type="text" [(ngModel)]="todoContent" placeholder="请输入待办事项" cols="30" rows="2"></textarea>
+      </div>
+      <div class="input-group btn-group">
+        <button class="btn btn-primay" (click)="submitTodo()">提交</button>
+        <button class="btn btn-default" [routerLink]="'/listTodo'">返回列表</button>
+      </div>
+    </div>
+  </div>

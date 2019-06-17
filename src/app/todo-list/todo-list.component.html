@@ -1,0 +1,21 @@
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="wrapper">
+  <h1 class="text-center">我的待办事件</h1>
+  <div class="btn-wrapper text-center">
+    <a [routerLink]="'/addTodo'" routerLinkActive="active">新增笔记</a>
+    <a [routerLink]="'/listTodo'" routerLinkActive="active">笔记列表</a>
+  </div>
+  <div class="alert-msg text-center">{{server.msg}}</div>
+  <ul>
+    <li *ngIf="!listTodos.length">暂无事件！</li>
+    <li *ngFor="let item of listTodos">
+      <span class="createTime">{{item.createTime}}</span>
+      {{item.content}}
+      <div class="btn-group">
+        <a class="btn btn-primay" rout [routerLink]="'/editTodo'" [queryParams]="{key: item.createTime}">编辑</a>
+        <a class="btn btn-danger" (click)="removeTodo(item.createTime)">删除</a>
+      </div>
+    </li>
+  </ul>
+</div>
