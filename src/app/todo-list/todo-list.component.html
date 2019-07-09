@@ -13,7 +13,7 @@
       <span class="createTime">{{item.createTime}}</span>
       {{item.content}}
       <div class="btn-group">
-        <a class="btn btn-primay" rout [routerLink]="'/editTodo'" [queryParams]="{key: item.createTime}">编辑</a>
+        <a class="btn btn-primay"  [routerLink]="'/editTodo'" [queryParams]="{key: item.createTime}">编辑</a>
         <a class="btn btn-danger" (click)="removeTodo(item.createTime)">删除</a>
       </div>
     </li>
